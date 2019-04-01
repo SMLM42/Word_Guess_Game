@@ -12,7 +12,6 @@ var wordWin = 0
 var correct = 0
 
 
-
 function generateWord() {
     computerGuess = wordList[Math.floor(Math.random() * wordList.length)];
     arrayLength = computerGuess.length
@@ -25,7 +24,6 @@ function generateWord() {
     document.getElementById("word").textContent = word;
     document.getElementById("word").textContent = word;
     document.getElementById("wins").textContent = wins;
-    document.getElementById("losses").textContent = losses;
     document.getElementById("guessleft").textContent = guessesLeft;
     document.getElementById("guesses").textContent = guessesList;
 }
@@ -68,7 +66,6 @@ document.onkeydown = function (event) {
     success = 0;
     document.getElementById("word").textContent = word;
     document.getElementById("wins").textContent = wins;
-    document.getElementById("losses").textContent = losses;
     document.getElementById("guessleft").textContent = guessesLeft;
     document.getElementById("guesses").textContent = guessesList;
 }
